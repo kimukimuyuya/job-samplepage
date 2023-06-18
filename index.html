@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>サンプルページ</title>
+  <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <div class="header-icon-button">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="header-title">サンプルページ for admin</div>
+    </div>
+    <div class="header-icon-chat">
+      <i class="fa-regular fa-comment"></i>
+    </div>
+  </header>
+  <aside class="sidebar">
+    <ul class="sidebar-list">
+      <li class="sidebar-item">
+        <i class="fa-solid fa-door-open"></i>
+        <p>Welcome</p>
+      </li>
+      <li class="sidebar-item">
+        <i class="fa-solid fa-user"></i>
+        <p>Users</p>
+      </li>
+      <li class="sidebar-item">
+        <i class="fa-solid fa-building"></i>
+        <p>Register Company</p>
+      </li>
+    </ul>
+  </aside>
+  <main>
+    <form action="#" class="search">
+      <input type="text" placeholder="ID、名前、メールアドレスで検索">
+      <button type="submit">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </form>
+    <table class="main-table">
+      <thead class="table-header">
+        <tr>
+          <th class="table-header-item">ID</th>
+          <th class="table-header-item"></th>
+          <th class="table-header-item">名前</th>
+          <th class="table-header-item">メールアドレス</th>
+          <th class="table-header-item">資格状態</th>
+          <th class="table-header-item">作成日時</th>
+          <th class="table-header-item">最終アクセス日時</th>
+          <th class="table-header-item">ユーザー更新日時</th>
+          <th class="table-header-item">受験状況</th>
+          <th class="table-header-item">チャット開閉状況</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="table-body-wrapper">
+          <td class="table-body-item">890</td>
+          <td class="table-body-item">
+            <div class="name-icon">
+              <span>小</span>
+            </div>
+          </td>
+          <td class="table-body-item">サンプルA</td>
+          <td class="table-body-item">xxxx@outlook.com</td>
+          <td class="table-body-item">
+            <div class="table-body-license">
+              <p>Aws Certified Developer - Associate</p>
+            </div>
+            <div class="table-body-license">
+              <p>Aws Certified Solutions Architect - Associate</p>
+            </div>
+          </td>
+          <td class="table-body-item">2021/08/30</td>
+          <td class="table-body-item">2022/11/08</td>
+          <td class="table-body-item">2022/11/08</td>
+          <td class="table-body-item">未受験</td>
+          <td class="table-body-item">×</td>
+        </tr>
+        <tr class="table-body-wrapper">
+          <td class="table-body-item">1825</td>
+          <td class="table-body-item">
+            <div class="name-icon">
+              <span>岡</span>
+            </div>
+          </td>
+          <td class="table-body-item">サンプルB</td>
+          <td class="table-body-item">xxxx@gmail.com</td>
+          <td class="table-body-item">
+            <div class="table-body-license">
+              <p>Aws Certified Security - Specialty</p>
+            </div>
+            <div class="table-body-license">
+              <p>Aws Certified Data Analytics - Specialty</p>
+            </div>
+            <div class="table-body-license">
+              <p>Aws Certified Developer - Associate</p>
+            </div>
+            <div class="table-body-license">
+              <p>Aws Certified Database - Specialty</p>
+            </div>
+            <div class="table-body-license">
+              <p>Aws Certified Solutions Architect - Associate</p>
+            </div>
+            <div class="table-body-license">
+              <p>Aws Certified Solutions Architect - Professional</p>
+            </div>
+            <div class="table-body-license">
+              <p>Aws Certified Machine Learning - Specialty</p>
+            </div>
+            <div class="table-body-license">
+              <p>Aws Certified DevOps Engineer - Professional</p>
+            </div>
+            <div class="table-body-license-error">
+              <p>https://www.credly.com/badges…</p>
+          </td>
+          <td class="table-body-item">2022/11/08</td>
+          <td class="table-body-item">2022/11/08</td>
+          <td class="table-body-item">2022/11/08</td>
+          <td class="table-body-item">未受験</td>
+          <td class="table-body-item">×</td>
+        </tr>
+        <tr class="table-body-wrapper">
+          <td class="table-body-item">1800</td>
+          <td class="table-body-item">
+            <div class="name-icon">
+              <span>湖</span>
+            </div>
+          </td>
+          <td class="table-body-item">サンプルC</td>
+          <td class="table-body-item">xxxx@gmail.com</td>
+          <td class="table-body-item">
+            <div class="table-body-license">
+              <p>Aws Certified Cloud Practitioner</p>
+            </div>
+          </td>
+          <td class="table-body-item">2022/10/30</td>
+          <td class="table-body-item">2022/11/08</td>
+          <td class="table-body-item">2022/11/08</td>
+          <td class="table-body-item">受験中</td>
+          <td class="table-body-item">〇</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>
